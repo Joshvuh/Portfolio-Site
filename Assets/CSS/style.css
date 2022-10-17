@@ -1,0 +1,136 @@
+/* Universal styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+/* Main header styling */
+header {
+    display: flex;
+    padding: 20px 20px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 7px rgb(234, 248, 255);
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(to left, rgb(116, 58, 213), rgb(213, 58, 157));
+}
+
+/* Nav menu link styling */
+a {
+    text-decoration: underline;
+    color: white;
+    transition: all 0.4s ease 0s;
+    font-weight: bolder;
+}
+
+/* Changes color of nav menu links when hovering over them */
+header a:hover {
+    color: #4f89b8;
+}
+
+/* Styling for h1 on header, top left of the screen */
+header h1 {
+    padding: 10px;
+    border-width: 3px;
+    border-style: solid;
+    background-image: linear-gradient(to left, rgb(116, 58, 213), rgb(213, 58, 157));
+}
+
+/* spacing to make nav menu buttons look better */
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+}
+
+/* Footer styling */
+footer {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to left, rgb(116, 58, 213), rgb(213, 58, 157));
+    padding: 15px;
+    color: white;
+}
+
+/* Main flex container */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Side section containg about me */
+.side-section {
+    flex: 30%; 
+    background-image: linear-gradient(to left, rgb(116, 58, 213), rgb(213, 58, 157)); 
+    padding: 20px; 
+    color: white;
+}
+
+/* Added top padding to picture for better placement */
+.me {
+    padding-top: 20px;
+}
+
+/* Main portfolio content area */
+.mywork {
+    flex: 70%; 
+    background-image: linear-gradient(to left, rgb(18, 20, 128), rgb(33, 107, 219));
+    padding: 20px;
+    box-shadow: 0 0 50px 5px rgb(18, 20, 128);
+    color: white;
+}
+
+/* Styling for the actual images in mywork area */
+.myprojects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* ID to change positioning of first project */
+#firstproject {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 10px 10px 0;
+}
+
+/* Media queries to change styling depending on the size of the user's screen */
+@media screen and (max-width: 980px) {
+    .flex-container {
+      flex-direction: column;
+    }
+
+    img {
+        width: 50%;
+        max-height: 50vh;
+        min-width: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    ul {
+      flex-direction: column;
+      padding-left: 15vh;
+    }
+
+    li {
+        height: auto;
+        width: 100%;
+        align-content: flex-end;
+    }
+    img {
+        width: 100%;
+        max-height: 50vh;
+        min-width: 0;
+    }
+}
