@@ -93,10 +93,17 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+.mainImage {
+    width: 800px;
+    height: 500px;
 }
 
 /* ID to change positioning of first project */
-#firstproject {
+#mainProject {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
