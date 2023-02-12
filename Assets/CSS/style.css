@@ -25,7 +25,7 @@ header {
 /* Nav menu link styling */
 a {
     text-decoration: underline;
-    color: white;
+    color: black;
     transition: all 0.4s ease 0s;
     font-weight: bolder;
 }
@@ -43,72 +43,18 @@ header h1 {
     background-image: linear-gradient(to left, rgb(116, 58, 213), rgb(213, 58, 157));
 }
 
-/* spacing to make nav menu buttons look better */
-nav ul {
+.card {
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 7px 5px 12px black;
+}
+
+.container {
     display: flex;
-    justify-content: space-between;
-    min-width: 300px;
 }
 
-/* Footer styling */
-footer {
-    display: flex;
-    justify-content: center;
-    background-image: linear-gradient(to left, rgb(116, 58, 213), rgb(213, 58, 157));
-    padding: 15px;
-    color: white;
-}
-
-/* Main flex container */
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* Side section containg about me */
-.side-section {
-    flex: 30%; 
-    background-image: linear-gradient(to left, rgb(116, 58, 213), rgb(213, 58, 157)); 
-    padding: 20px; 
-    color: white;
-}
-
-/* Added top padding to picture for better placement */
-.me {
-    padding-top: 20px;
-}
-
-/* Main portfolio content area */
-.mywork {
-    flex: 70%; 
-    background-image: linear-gradient(to left, rgb(18, 20, 128), rgb(33, 107, 219));
-    padding: 20px;
-    box-shadow: 0 0 50px 5px rgb(18, 20, 128);
-    color: white;
-}
-
-/* Styling for the actual images in mywork area */
-.myprojects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    width: 300px;
-    height: 300px;
-}
-
-.mainImage {
-    width: 800px;
-    height: 500px;
-}
-
-/* ID to change positioning of first project */
-#mainProject {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px 10px 10px 0;
+#my-info {
+    padding-left: 10px;
 }
 
 /* Media queries to change styling depending on the size of the user's screen */

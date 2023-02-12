@@ -1,58 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="Assets/CSS/reset.css">
-    <link rel="stylesheet" type="text/css" href="Assets/CSS/style.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Josh Lemmond - Portfolio</title>
-</head>
-<body>
-    <header>
-        <h1>Josh Lemmond's Portfolio</h1>
-        <!-- Nav menu -->
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#mywork">My Work</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="flex-container">
-        <!-- Side section containg about me-->
-        <section class="side-section">
-            <h2 id="about">About Me</h2>
-            <p> Hello! My name is Josh Lemmond. I am currently studying to be a Full Stack Web Developer. <br> As you can tell, I'm still quite early in my journey! <br>
-                This website will serve as my Portfolio, that will be updated along the way as I learn.
-                <br><img class="me" src="./Assets/Images/IMG_2991.JPG" title="My wife and I in Japan" alt="My wife and I in Japan under a Cherry Blossom tree.">
-            </p>
-        </section>
-        <!-- Main section containing portfolio content -->
-        <section class="mywork">
-            <h2 id="mywork">My Work</h2>
-            <h2 style="text-align: center;">Movie and Beer Roulette! (Built with a project group during Bootcamp)</h2>
-            <a ID="mainProject" href="https://keekerr.github.io/Movie-Beer-Roulette/"><img class="mainImage" src="./Assets/Images/firefox_dM6785JOGd.jpg" alt="Movie and Beer Roulette"> </a>
-            <h3>Prework Study Guide</h3>
-            <a href="https://joshvuh.github.io/prework-study-guide/"><img class="myprojects" href="https://joshvuh.github.io/prework-study-guide/" src="./Assets/Images/first-project.png" alt="Placeholder image"></a>
-            <p>Placeholder for future app</p>
-            <img class="myprojects" src="https://via.placeholder.com/200x200" alt="Placeholder image">
-            <p>Placeholder for future app</p>
-        </section>
-        <!-- Bottom section containing contact info -->
-        <section class="side-section">
-            <h2 id="contact">Contact Me</h2>
-            <p>
-                <a href="mailto:joshualemmond@gmail.com">JoshuaLemmond@gmail.com</a>
-                <a href="https://github.com/Joshvuh">Github</a>
-                <a href="https://twitter.com/joshvuh">Twitter</a>
-                <a href="https://open.spotify.com/user/joshva__?si=35a06b1dec634787">Spotify</a>
-            </p>
-        </section>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Assets/CSS/reset.css">
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas data-position="left">
+          <div class="row column">
+            <br>
+            <img class="thumbnail" src="./Assets/Images/elany-and-i.jpg" alt="My wife and I in Japan">
+            <h3>About Me</h3>
+              <p>I am a Full Stack Developer with frontend and backend experience.</p>
+              <h3>Skills</h3>
+              <ul><li>HTML</li></ul>
+              <h4>My Links</h4>
+              <ul class="vertical menu">
+                <li><a href="mailto:joshualemmond@gmail.com"><i class="fi-list fa-solid fa-envelope"></i> Email</a></li>
+                <li><a href="https://github.com/Joshvuh"><i class="fa-brands fa-github"></i> Github</a></li>
+              </ul>
+          </div>
+        </div>
+
+        <div class="off-canvas-content" data-off-canvas-content>
+          <div class="title-bar hide-for-large">
+            <div class="title-bar-left">
+              <button class="menu-icon" type="button" data-open="my-info"></button>
+              <span class="title-bar-title">Josh Lemmond - Portfolio</span>
+            </div>
+          </div>
+          <div class="callout text-center">
+            <div class="row column">
+              <h1>Hello! My name is Josh Lemmond.</h1>
+              <p class="lead">Full Stack Web Developer</p>
+            </div>
+          </div>
+          <div class="row container">
+            <div class="card" style="width: 500px;">
+              <div class="card-section">
+                <h4>ChatterHub</h4>
+              </div>
+              <a href="https://github.com/Joshvuh/ChatterHub" target="_blank"><img src="./Assets/Images/chatterhub.png"/></a>
+              <div class="card-section">
+                <p>ChatterHub is the first full stack web app I helped create. It was built using the MVC pattern, using ExpressJS and NodeJS to create a RESTful API. We created this app because we wanted an old-school forum to create conversation on.</p>
+              </div>
+            </div>
+            <div class="card" style="width: 500px;">
+              <div class="card-section">
+                <h4>Movie & Beer Roulette</h4>
+              </div>
+              <a href="https://github.com/Joshvuh/Movie-Beer-Roulette" target="_blank"><img src="./Assets/Images/firefox_dM6785JOGd.jpg"/></a>
+              <div class="card-section">
+                <p>This app was built as a group project, using HTML, CSS, and JavaScript to make API calls to generate a random movie and beer.</p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-        <h2>Created by Josh Lemmond</h2>
-    </footer>
-</body>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script src="https://kit.fontawesome.com/8056713976.js" crossorigin="anonymous"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
 </html>
+
+
+
