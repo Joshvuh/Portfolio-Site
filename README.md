@@ -8,4 +8,4 @@ This webpage will be used as my portfolio site, it's currently quite simple but 
 
 https://joshvuh.github.io/Portfolio-Site/
 
-![image](https://user-images.githubusercontent.com/114708968/196069092-cf2fe2e1-c0af-4acc-bfb0-8e7cd83c579d.png)
+![image](https://user-images.githubusercontent.com/114708968/218288838-15523945-7aeb-4c42-a415-08a5513b9d20.png)
