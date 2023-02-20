@@ -10,9 +10,11 @@
   </head>
   <body>
     <main>
-      <section>
-        <div class="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas data-position="left">
+      <section class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+        <div class="off-canvas position-left reveal-for-large" id="my-info" data-off-canvas="" data-position="left" aria-hidden="true" data-offcanvas="rcnrnl-offcanvas">
           <div class="row column">
+            <button class="hide-for-large mobile-slideout-button" type="button" data-close="my-info">&times;</button>
             <br>
             <img class="thumbnail" src="./Assets/Images/elany-and-i.jpg" alt="My wife and I in Japan">
             <h3>About Me</h3>
@@ -22,6 +24,7 @@
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Bootstrap</li>
+                <li>Foundation</li>
                 <li>JavaScript</li>
                 <li>Node.js</li>
                 <li>Express.js</li>
@@ -96,6 +99,7 @@
           </div>
           </div>
         </div>
+      </div>
       </section>
     </main>
 

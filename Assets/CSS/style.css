@@ -20,7 +20,7 @@ a:hover {
     transform: scale(1.05);
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-weight: bolder;
 }
 
@@ -43,33 +43,9 @@ h1, h2, h3 {
     padding-left: 10px;
 }
 
-/* Media queries to change styling depending on the size of the user's screen */
-@media screen and (max-width: 980px) {
-    .flex-container {
-      flex-direction: column;
-    }
-
-    img {
-        width: 50%;
-        max-height: 50vh;
-        min-width: 0;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    ul {
-      flex-direction: column;
-      padding-left: 15vh;
-    }
-
-    li {
-        height: auto;
-        width: 100%;
-        align-content: flex-end;
-    }
-    img {
-        width: 100%;
-        max-height: 50vh;
-        min-width: 0;
-    }
+.mobile-slideout-button {
+    margin: 10px 0 0 200px;
+    font-size: 35px;
+    font-weight: 600;
+    cursor: pointer;
 }
