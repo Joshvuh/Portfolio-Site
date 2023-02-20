@@ -6,41 +6,26 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-body {
-    margin: 0;
-}
-
-/* Main header styling */
-header {
-    display: flex;
-    padding: 20px 20px;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 7px rgb(234, 248, 255);
-    text-decoration: none;
-    color: white;
-    background-image: linear-gradient(to left, rgb(116, 58, 213), rgb(213, 58, 157));
-}
-
 /* Nav menu link styling */
 a {
-    text-decoration: underline;
+    text-decoration: none;
     color: black;
     transition: all 0.4s ease 0s;
     font-weight: bolder;
 }
 
 /* Changes color of nav menu links when hovering over them */
-header a:hover {
+a:hover {
     color: #4f89b8;
+    transform: scale(1.05);
 }
 
-/* Styling for h1 on header, top left of the screen */
-header h1 {
-    padding: 10px;
-    border-width: 3px;
-    border-style: solid;
-    background-image: linear-gradient(to left, rgb(116, 58, 213), rgb(213, 58, 157));
+h1, h2, h3 {
+    font-weight: bolder;
+}
+
+.bulletedList {
+    list-style-type: square;
 }
 
 .card {
@@ -51,6 +36,7 @@ header h1 {
 
 .container {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #my-info {
