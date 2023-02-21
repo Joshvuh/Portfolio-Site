@@ -6,6 +6,6 @@ This webpage will be used as my portfolio site, it's currently quite simple but 
 
 ## Link to Application
 
-https://joshvuh.github.io/Portfolio-Site/
+https://joshualemmond.com/
 
-![image](https://user-images.githubusercontent.com/114708968/218288838-15523945-7aeb-4c42-a415-08a5513b9d20.png)
+![image](https://user-images.githubusercontent.com/114708968/220211539-3b23dd83-d0ad-4e8d-b52b-950fc3394b27.png)
